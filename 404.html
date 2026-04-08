@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LobbyUp</title>
+    <script>
+      (function () {
+        // GitHub Pages fallback for /invite/<CODE> direct navigation
+        var path = window.location.pathname || '';
+        if (path.indexOf('/invite/') === 0) {
+          var code = path.split('/').filter(Boolean)[1] || '';
+          var target = '/invite' + (code ? '?code=' + encodeURIComponent(code) : '');
+          window.location.replace(target);
+          return;
+        }
+        window.location.replace('/');
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>

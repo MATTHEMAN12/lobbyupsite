@@ -1,0 +1,124 @@
+:root {
+  color-scheme: dark;
+  --bg: #0b0f14;
+  --card: #121923;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --brand: #22c55e;
+  --brand-2: #16a34a;
+  --border: #1f2937;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at top, #111827, var(--bg) 55%);
+  color: var(--text);
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  min-height: 100%;
+}
+
+.page {
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 520px;
+  background: linear-gradient(180deg, #121923, #0f172a);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0 0 10px;
+}
+
+.title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.subtitle {
+  margin: 10px 0 18px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.pill {
+  display: inline-block;
+  background: rgba(34, 197, 94, 0.12);
+  color: #86efac;
+  border: 1px solid rgba(34, 197, 94, 0.35);
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 6px 12px;
+  margin-bottom: 12px;
+}
+
+.code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  background: #0b1220;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  padding: 10px 12px;
+  word-break: break-all;
+  margin: 10px 0 14px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  appearance: none;
+  border: 0;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--brand);
+  color: #06250f;
+}
+
+.btn-primary:hover {
+  background: var(--brand-2);
+}
+
+.btn-secondary {
+  background: #1f2937;
+  color: var(--text);
+  border: 1px solid #334155;
+}
+
+.small {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.hidden {
+  display: none !important;
+}
