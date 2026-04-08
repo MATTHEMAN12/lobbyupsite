@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LobbyUp Invite</title>
+    <meta name="description" content="Open a LobbyUp invite and connect with friends." />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="card">
+        <p class="logo">LobbyUp</p>
+        <span class="pill">Invite detected</span>
+        <h1 class="title">Opening your invite...</h1>
+        <p class="subtitle" id="statusText">
+          We are sending you to the LobbyUp app now.
+        </p>
+
+        <div id="codeWrap" class="hidden">
+          <div class="small">Invite code</div>
+          <div id="inviteCode" class="code">-</div>
+        </div>
+
+        <div class="actions">
+          <a id="openAppBtn" class="btn btn-primary" href="#">Open in App</a>
+          <a
+            id="iosStoreBtn"
+            class="btn btn-secondary"
+            href="https://apps.apple.com/app/id0000000000"
+            rel="noopener noreferrer"
+          >
+            Download on App Store
+          </a>
+          <a
+            id="androidStoreBtn"
+            class="btn btn-secondary"
+            href="https://play.google.com/store/apps/details?id=com.lobbyup.app"
+            rel="noopener noreferrer"
+          >
+            Get it on Google Play
+          </a>
+        </div>
+
+        <p class="small">
+          If nothing happens, tap "Open in App". If you do not have LobbyUp installed, use the store buttons.
+        </p>
+      </section>
+    </main>
+
+    <script src="/invite.js"></script>
+  </body>
+</html>
